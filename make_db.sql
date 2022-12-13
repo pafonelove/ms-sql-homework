@@ -1,8 +1,8 @@
-/* Создание базы данных. */
+-- Создание базы данных.
 CREATE DATABASE service_centerDB;
 use service_centerDB;
 
-/* Создание таблиц. */
+-- Создание таблиц.
 CREATE TABLE Appeal
 (
 	Id INT NOT NULL PRIMARY KEY IDENTITY,
@@ -83,7 +83,7 @@ CREATE TABLE Shipper
 	[E-mail] NCHAR(20) NOT NULL
 );
 
-/* Добавление столбцов для установления зависимостей между таблицами. */
+-- Добавление столбцов для установления зависимостей между таблицами.
 
 ALTER TABLE dbo.Device
 	ADD Id_детали_под_замену INT NOT NULL;
@@ -100,7 +100,7 @@ ALTER TABLE dbo.Part
 ALTER TABLE dbo.Shipper
 	ADD Id_менеджера INT NOT NULL;
 
-/* Добавление внешних ключей для установления зависимостей между таблицами. */
+-- Добавление внешних ключей для установления зависимостей между таблицами.
 
 ALTER TABLE dbo.Appeal
 	ADD CONSTRAINT FK_Appeal_Device FOREIGN KEY (Id_устройства) REFERENCES dbo.Device(Id);

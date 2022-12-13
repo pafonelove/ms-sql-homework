@@ -1,6 +1,6 @@
 use service_centerDB;
 
-/* ƒобавление начальных данных в таблицу Employee */
+-- ƒобавление начальных данных в таблицу Employee.
 INSERT INTO Employee
 VALUES
 (0, 'Ivanov_PA', 'Trainee', 'Without_experience'),
@@ -11,7 +11,7 @@ VALUES
 (5, 'Astafjev_IP', 'Engineer', '4_years'),
 (6, 'Okunev_DK', 'Trainee', '6_months');
 
-/* ƒобавление начальных данных в таблицу Shipper */
+-- ƒобавление начальных данных в таблицу Shipper.
 DBCC CHECKIDENT (Shipper, RESEED, 0);
 INSERT INTO Shipper
 VALUES 
@@ -23,7 +23,7 @@ VALUES
 ('PartsDirect', 'Saratov, Moskovskaya, 92, ', '+78452338442', 'parts@direct.ru', 4),
 ('Service-Mag', 'Saratov, Chernyshevskogo, 153', '+79379700365', 's-mag@yandex.ru', 4);
 
-/* ƒобавление начальных данных в таблицу Delivery */
+-- ƒобавление начальных данных в таблицу Delivery.
 DBCC CHECKIDENT (Delivery, RESEED, 0);
 INSERT INTO Delivery
 VALUES
@@ -36,7 +36,7 @@ VALUES
 ('Power_supplies', '597102', '2020-09-01', 'Service-Mag', 'Monitor', 245000, 240000, 'Astafjev_IP', 7);
 
 
-/* ƒобавление начальных данных в таблицу Part */
+-- ƒобавление начальных данных в таблицу Part.
 DBCC CHECKIDENT (Part, RESEED, 0);
 INSERT INTO Part
 VALUES 
@@ -48,7 +48,7 @@ VALUES
 ('Asus_B450M', '098001', 'PC', 10, 6),
 ('PS_213A', '987980', 'Monitor', 98, 7);
 
-/* ƒобавление начальных данных в таблицу Device */
+-- ƒобавление начальных данных в таблицу Device.
 DBCC CHECKIDENT (Device, RESEED, 0);
 INSERT INTO Device
 VALUES
@@ -60,7 +60,7 @@ VALUES
 ('AMD_Hyper2', 'PC', 'AMD', 'Hyper2', 'DMA9001001', '2021-02-04', 6),
 ('Dell_Q2A', 'Monitor', 'Dell', 'Q2A', 'Q001X2F890', '2019-08-15', 7);
 
-/* ƒобавление начальных данных в таблицу Issue */
+-- ƒобавление начальных данных в таблицу Issue.
 DBCC CHECKIDENT (Issue, RESEED, 0);
 INSERT INTO Issue
 VALUES
@@ -72,7 +72,7 @@ VALUES
 ('Critical', 'No', 6),
 ('Medium', 'Yes', 7);
 
-/* ƒобавление начальных данных в таблицу Contact */
+-- ƒобавление начальных данных в таблицу Contact.
 DBCC CHECKIDENT (Contact, RESEED, 0);
 INSERT INTO Contact
 VALUES
@@ -86,7 +86,7 @@ VALUES
 ('+79178730192', 'Saratov, Kutyakova, 45'),
 ('+79276667812', 'Saratov, pr. Stolypina, 25');
 
-/* ƒобавление начальных данных в таблицу Appeal */
+-- ƒобавление начальных данных в таблицу Appeal.
 DBCC CHECKIDENT (Appeal, RESEED, 0);
 INSERT INTO Appeal
 VALUES
