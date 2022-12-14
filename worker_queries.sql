@@ -94,7 +94,7 @@ HAVING COUNT(Название_поставки) > 1;
 */
 
 -- Соединение таблиц
-
+/*
 select Id, Стоимость_поставки_без_НДС from Delivery;
 select Id, Название_фирмы from Shipper;
 
@@ -103,3 +103,4 @@ FROM Shipper AS S
 JOIN Delivery AS D ON D.Id = S.Id
 WHERE D.Стоимость_поставки_без_НДС > 250000
 ORDER BY D.Стоимость_поставки DESC;
+*/
